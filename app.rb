@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/base'
+require_relative './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
   configure :development do 
@@ -20,4 +21,4 @@ class BookmarkManager < Sinatra::Base
 
   run! if app_file == $0
 
-end 
+end
